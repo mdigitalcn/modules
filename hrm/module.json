@@ -1,0 +1,11 @@
+{
+  "name": "hrm",
+  "displayName": "HRM Module",
+  "description": "Complete HR management — employee directory, attendance, leave management, goal tracking, skills matrix, onboarding. Connect to your HR backend.",
+  "requires": {
+    "widgets": ["employee-card", "team-roster", "attendance-status", "leave-balance-card", "onboarding-progress", "skills-matrix", "goal-tracker"],
+    "pages": ["employee-directory-page"],
+    "layouts": []
+  },
+  "tags": ["hr", "employees", "attendance", "leave", "goals", "onboarding"]
+}

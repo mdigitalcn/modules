@@ -1,0 +1,28 @@
+{
+  "name": "auth",
+  "displayName": "Auth Module",
+  "description": "Complete authentication system — API client, provider, session management, protected routes, auth guard. Wire up to your backend and get a full auth flow.",
+  "requires": {
+    "widgets": [
+      "login-form",
+      "register-form",
+      "forgot-password-form",
+      "reset-password-form",
+      "otp-verification"
+    ],
+    "pages": [
+      "login-page",
+      "register-page",
+      "forgot-password-page",
+      "reset-password-page",
+      "two-factor-page",
+      "verify-email-page"
+    ],
+    "layouts": [
+      "centered-auth-layout",
+      "split-auth-layout",
+      "card-auth-layout"
+    ]
+  },
+  "tags": ["auth", "jwt", "session", "login", "register", "2fa", "protected-routes"]
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://mdigital.dev/registry/schema.json",
+  "name": "@mdigital/modules",
+  "version": "3.0.0",
+  "description": "Production-ready feature modules — complete business logic domains with API clients, hooks, types, and orchestration components. Each module combines with widgets/pages/layouts from the mdigital ecosystem.",
+  "type": "registry:module",
+  "items": [
+    {
+      "name": "auth",
+      "type": "registry:module",
+      "description": "Complete auth system — API client, session management, protected routes, auth guard, token refresh. Wire to your backend.",
+      "files": [
+        "auth/model/types.ts",
+        "auth/model/constants.ts",
+        "auth/model/api.ts",
+        "auth/model/hooks.ts",
+        "auth/view/auth-provider.tsx",
+        "auth/view/auth-guard.tsx",
+        "auth/view/session-monitor.tsx",
+        "auth/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["auth", "jwt", "session", "login", "register", "2fa"]
+    },
+    {
+      "name": "dashboard",
+      "type": "registry:module",
+      "description": "Dashboard data layer — KPI hooks, chart data management, date range filters, activity timeline API.",
+      "files": [
+        "dashboard/model/types.ts",
+        "dashboard/model/constants.ts",
+        "dashboard/model/api.ts",
+        "dashboard/model/hooks.ts",
+        "dashboard/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["dashboard", "analytics", "kpi", "charts", "stats"]
+    },
+    {
+      "name": "ecommerce",
+      "type": "registry:module",
+      "description": "Ecommerce logic — cart management, checkout flow, order tracking, product queries, invoice handling.",
+      "files": [
+        "ecommerce/model/types.ts",
+        "ecommerce/model/constants.ts",
+        "ecommerce/model/api.ts",
+        "ecommerce/model/hooks.ts",
+        "ecommerce/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["ecommerce", "cart", "checkout", "orders", "products"]
+    },
+    {
+      "name": "crm",
+      "type": "registry:module",
+      "description": "CRM logic — contacts, deals, pipeline stages, activity timeline, lead scoring, filters.",
+      "files": [
+        "crm/model/types.ts",
+        "crm/model/constants.ts",
+        "crm/model/api.ts",
+        "crm/model/hooks.ts",
+        "crm/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["crm", "contacts", "deals", "pipeline", "sales"]
+    },
+    {
+      "name": "file-management",
+      "type": "registry:module",
+      "description": "File management — upload with XHR progress, file browser, selection, filtering, folder navigation.",
+      "files": [
+        "file-management/model/types.ts",
+        "file-management/model/constants.ts",
+        "file-management/model/api.ts",
+        "file-management/model/hooks.ts",
+        "file-management/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["files", "upload", "documents", "file-manager"]
+    },
+    {
+      "name": "messaging",
+      "type": "registry:module",
+      "description": "Messaging system — conversations, messages, typing indicators, presence, real-time hooks, pagination.",
+      "files": [
+        "messaging/model/types.ts",
+        "messaging/model/constants.ts",
+        "messaging/model/api.ts",
+        "messaging/model/hooks.ts",
+        "messaging/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["messaging", "chat", "inbox", "real-time"]
+    },
+    {
+      "name": "settings",
+      "type": "registry:module",
+      "description": "Settings system — profile, notifications, appearance, security, billing, team. Section nav with dirty tracking.",
+      "files": [
+        "settings/model/types.ts",
+        "settings/model/constants.ts",
+        "settings/model/api.ts",
+        "settings/model/hooks.ts",
+        "settings/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["settings", "profile", "preferences", "billing", "team"]
+    },
+    {
+      "name": "hrm",
+      "type": "registry:module",
+      "description": "HR management — employee directory, attendance clock-in/out, leave management, goal tracking, skills matrix.",
+      "files": [
+        "hrm/model/types.ts",
+        "hrm/model/constants.ts",
+        "hrm/model/api.ts",
+        "hrm/model/hooks.ts",
+        "hrm/index.ts"
+      ],
+      "dependencies": [],
+      "tags": ["hr", "employees", "attendance", "leave", "goals"]
+    }
+  ]
+}

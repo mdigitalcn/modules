@@ -1,0 +1,11 @@
+{
+  "name": "messaging",
+  "displayName": "Messaging Module",
+  "description": "Complete messaging system — conversations, messages, typing indicators, presence, real-time hooks, pagination. Wire to your chat backend.",
+  "requires": {
+    "widgets": [],
+    "pages": ["inbox-page"],
+    "layouts": []
+  },
+  "tags": ["messaging", "chat", "inbox", "conversations", "real-time"]
+}

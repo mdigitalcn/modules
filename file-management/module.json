@@ -1,0 +1,11 @@
+{
+  "name": "file-management",
+  "displayName": "File Management Module",
+  "description": "Complete file management — upload with progress, file browser, selection, filtering, breadcrumbs, folder navigation. XHR-based upload with progress tracking.",
+  "requires": {
+    "widgets": ["avatar-upload"],
+    "pages": ["file-manager-page"],
+    "layouts": []
+  },
+  "tags": ["files", "upload", "documents", "file-manager", "storage"]
+}

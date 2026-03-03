@@ -1,0 +1,11 @@
+{
+  "name": "crm",
+  "displayName": "CRM Module",
+  "description": "Complete CRM logic — contacts, deals, pipeline stages, activity timeline, lead scoring, filters. Connect to your CRM backend.",
+  "requires": {
+    "widgets": ["contact-card", "deal-card", "activity-timeline", "lead-score-indicator", "filter-bar"],
+    "pages": ["contacts-page", "pipeline-page"],
+    "layouts": []
+  },
+  "tags": ["crm", "contacts", "deals", "pipeline", "sales", "leads"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "dashboard",
+  "displayName": "Dashboard Module",
+  "description": "Complete dashboard feature kit — KPI data hooks, chart data management, date range filters, activity timeline, API client. Connect to your analytics backend.",
+  "requires": {
+    "widgets": ["kpi-card", "stat-group", "stats-counter", "metric-comparison", "chart-card", "pie-chart-card", "sparkline-card", "activity-timeline"],
+    "pages": ["overview-page", "analytics-page"],
+    "layouts": ["sidebar-layout", "header-sidebar-layout"]
+  },
+  "tags": ["dashboard", "analytics", "kpi", "charts", "stats", "timeline"]
+}

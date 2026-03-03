@@ -1,0 +1,11 @@
+{
+  "name": "settings",
+  "displayName": "Settings Module",
+  "description": "Complete settings system — profile, notifications, appearance, security, billing, team management. Section navigation with unsaved changes tracking.",
+  "requires": {
+    "widgets": ["avatar-upload", "user-profile-card"],
+    "pages": ["general-settings-page", "profile-page", "notifications-page", "billing-page", "team-page"],
+    "layouts": ["settings-layout"]
+  },
+  "tags": ["settings", "profile", "preferences", "billing", "team", "security"]
+}

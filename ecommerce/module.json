@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce",
+  "displayName": "Ecommerce Module",
+  "description": "Complete ecommerce logic — cart management, checkout flow, order tracking, product queries, invoice handling. Connect to your commerce backend.",
+  "requires": {
+    "widgets": ["invoice-preview", "order-status-tracker", "stock-level-card", "pricing-table"],
+    "pages": ["checkout-page", "orders-page", "products-page", "invoices-page"],
+    "layouts": []
+  },
+  "tags": ["ecommerce", "cart", "checkout", "orders", "products", "invoices"]
+}
