@@ -1,124 +1,191 @@
 {
-  "$schema": "https://mdigital.dev/registry/schema.json",
-  "name": "@mdigital/modules",
   "version": "3.0.0",
-  "description": "Production-ready feature modules — complete business logic domains with API clients, hooks, types, and orchestration components. Each module combines with widgets/pages/layouts from the mdigital ecosystem.",
-  "type": "registry:module",
   "items": [
     {
       "name": "auth",
-      "type": "registry:module",
-      "description": "Complete auth system — API client, session management, protected routes, auth guard, token refresh. Wire to your backend.",
+      "displayName": "Auth Module",
+      "description": "Complete auth system \u2014 API client, session management, protected routes, auth guard, token refresh. Wire to your backend.",
+      "category": "auth",
+      "tags": [
+        "auth",
+        "jwt",
+        "session",
+        "login",
+        "register",
+        "2fa"
+      ],
+      "path": "auth",
       "files": [
-        "auth/model/types.ts",
-        "auth/model/constants.ts",
-        "auth/model/api.ts",
-        "auth/model/hooks.ts",
-        "auth/view/auth-provider.tsx",
-        "auth/view/auth-guard.tsx",
-        "auth/view/session-monitor.tsx",
-        "auth/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "view/auth-provider.tsx",
+        "view/auth-guard.tsx",
+        "view/session-monitor.tsx",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["auth", "jwt", "session", "login", "register", "2fa"]
+      "peerDependencies": {}
     },
     {
       "name": "dashboard",
-      "type": "registry:module",
-      "description": "Dashboard data layer — KPI hooks, chart data management, date range filters, activity timeline API.",
+      "displayName": "Dashboard Module",
+      "description": "Dashboard data layer \u2014 KPI hooks, chart data management, date range filters, activity timeline API.",
+      "category": "analytics",
+      "tags": [
+        "dashboard",
+        "analytics",
+        "kpi",
+        "charts",
+        "stats"
+      ],
+      "path": "dashboard",
       "files": [
-        "dashboard/model/types.ts",
-        "dashboard/model/constants.ts",
-        "dashboard/model/api.ts",
-        "dashboard/model/hooks.ts",
-        "dashboard/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["dashboard", "analytics", "kpi", "charts", "stats"]
+      "peerDependencies": {}
     },
     {
       "name": "ecommerce",
-      "type": "registry:module",
-      "description": "Ecommerce logic — cart management, checkout flow, order tracking, product queries, invoice handling.",
+      "displayName": "Ecommerce Module",
+      "description": "Ecommerce logic \u2014 cart management, checkout flow, order tracking, product queries, invoice handling.",
+      "category": "commerce",
+      "tags": [
+        "ecommerce",
+        "cart",
+        "checkout",
+        "orders",
+        "products"
+      ],
+      "path": "ecommerce",
       "files": [
-        "ecommerce/model/types.ts",
-        "ecommerce/model/constants.ts",
-        "ecommerce/model/api.ts",
-        "ecommerce/model/hooks.ts",
-        "ecommerce/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["ecommerce", "cart", "checkout", "orders", "products"]
+      "peerDependencies": {}
     },
     {
       "name": "crm",
-      "type": "registry:module",
-      "description": "CRM logic — contacts, deals, pipeline stages, activity timeline, lead scoring, filters.",
+      "displayName": "CRM Module",
+      "description": "CRM logic \u2014 contacts, deals, pipeline stages, activity timeline, lead scoring, filters.",
+      "category": "sales",
+      "tags": [
+        "crm",
+        "contacts",
+        "deals",
+        "pipeline",
+        "sales"
+      ],
+      "path": "crm",
       "files": [
-        "crm/model/types.ts",
-        "crm/model/constants.ts",
-        "crm/model/api.ts",
-        "crm/model/hooks.ts",
-        "crm/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["crm", "contacts", "deals", "pipeline", "sales"]
+      "peerDependencies": {}
     },
     {
       "name": "file-management",
-      "type": "registry:module",
-      "description": "File management — upload with XHR progress, file browser, selection, filtering, folder navigation.",
+      "displayName": "File Management Module",
+      "description": "File management \u2014 upload with XHR progress, file browser, selection, filtering, folder navigation.",
+      "category": "utilities",
+      "tags": [
+        "files",
+        "upload",
+        "documents",
+        "file-manager"
+      ],
+      "path": "file-management",
       "files": [
-        "file-management/model/types.ts",
-        "file-management/model/constants.ts",
-        "file-management/model/api.ts",
-        "file-management/model/hooks.ts",
-        "file-management/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["files", "upload", "documents", "file-manager"]
+      "peerDependencies": {}
     },
     {
       "name": "messaging",
-      "type": "registry:module",
-      "description": "Messaging system — conversations, messages, typing indicators, presence, real-time hooks, pagination.",
+      "displayName": "Messaging Module",
+      "description": "Messaging system \u2014 conversations, messages, typing indicators, presence, real-time hooks, pagination.",
+      "category": "communication",
+      "tags": [
+        "messaging",
+        "chat",
+        "inbox",
+        "real-time"
+      ],
+      "path": "messaging",
       "files": [
-        "messaging/model/types.ts",
-        "messaging/model/constants.ts",
-        "messaging/model/api.ts",
-        "messaging/model/hooks.ts",
-        "messaging/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["messaging", "chat", "inbox", "real-time"]
+      "peerDependencies": {}
     },
     {
       "name": "settings",
-      "type": "registry:module",
-      "description": "Settings system — profile, notifications, appearance, security, billing, team. Section nav with dirty tracking.",
+      "displayName": "Settings Module",
+      "description": "Settings system \u2014 profile, notifications, appearance, security, billing, team. Section nav with dirty tracking.",
+      "category": "utilities",
+      "tags": [
+        "settings",
+        "profile",
+        "preferences",
+        "billing",
+        "team"
+      ],
+      "path": "settings",
       "files": [
-        "settings/model/types.ts",
-        "settings/model/constants.ts",
-        "settings/model/api.ts",
-        "settings/model/hooks.ts",
-        "settings/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["settings", "profile", "preferences", "billing", "team"]
+      "peerDependencies": {}
     },
     {
       "name": "hrm",
-      "type": "registry:module",
-      "description": "HR management — employee directory, attendance clock-in/out, leave management, goal tracking, skills matrix.",
+      "displayName": "HRM Module",
+      "description": "HR management \u2014 employee directory, attendance clock-in/out, leave management, goal tracking, skills matrix.",
+      "category": "hr",
+      "tags": [
+        "hr",
+        "employees",
+        "attendance",
+        "leave",
+        "goals"
+      ],
+      "path": "hrm",
       "files": [
-        "hrm/model/types.ts",
-        "hrm/model/constants.ts",
-        "hrm/model/api.ts",
-        "hrm/model/hooks.ts",
-        "hrm/index.ts"
+        "model/types.ts",
+        "model/constants.ts",
+        "model/api.ts",
+        "model/hooks.ts",
+        "index.ts"
       ],
       "dependencies": [],
-      "tags": ["hr", "employees", "attendance", "leave", "goals"]
+      "peerDependencies": {}
     }
   ]
 }
