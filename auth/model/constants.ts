@@ -1,6 +1,6 @@
 import type { AuthRoutes } from "./types";
 
-export const AUTH_STORAGE_PREFIX = "mdigital_auth";
+export const AUTH_STORAGE_PREFIX = "mdigitalcn_auth";
 
 export const AUTH_STORAGE_KEYS = {
   tokens: `${AUTH_STORAGE_PREFIX}_tokens`,

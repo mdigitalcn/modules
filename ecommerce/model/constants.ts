@@ -18,6 +18,6 @@ export const CHECKOUT_STEPS: { step: CheckoutStep; label: string }[] = [
   { step: "confirmation", label: "Done" },
 ];
 
-export const CART_STORAGE_KEY = "mdigital_cart";
+export const CART_STORAGE_KEY = "mdigitalcn_cart";
 export const DEFAULT_CURRENCY = "USD";
 export const DEFAULT_TAX_RATE = 0;

@@ -1,5 +1,5 @@
 {
-  "name": "@mdigital/modules",
+  "name": "@mdigitalcn/modules",
   "version": "1.0.0",
   "private": true,
   "description": "Module templates for cross-cutting concerns",
